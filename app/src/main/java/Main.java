@@ -13,6 +13,7 @@ public class Main {
 
     public static void main (String[] args) {
 
+        setDefaultActiveSpringProfile();
         SpringApplication.run(new Class[]{Main.class}, args);
 
 
@@ -23,5 +24,11 @@ public class Main {
                         "|    /|  __||  _  | | | | \\ /\n" +
                         "| |\\ \\| |___| | | | |/ /  | |\n" +
                         "\\_| \\_\\____/\\_| |_/___/   \\_/\n");
+    }
+
+    private static void setDefaultActiveSpringProfile () {
+        if (System.getProperty("spring.profiles.active") == null) {
+            System.setProperty("spring.profiles.active", "local");
+        }
     }
 }
