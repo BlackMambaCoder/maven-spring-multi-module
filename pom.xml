@@ -5,12 +5,13 @@
 
 	<groupId>rs.rado.leo</groupId>
 	<artifactId>mulit-module-skeleton</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.1.1-SNAPSHOT</version>
 	<modules>
 		<module>app</module>
 		<module>web</module>
 		<module>serviceapi</module>
 		<module>serviceimpl</module>
+		<module>environments</module>
 	</modules>
 	<packaging>pom</packaging>
 
