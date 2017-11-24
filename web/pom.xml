@@ -17,6 +17,11 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 			<version>1.5.8.RELEASE</version>
 		</dependency>
+		<dependency>
+			<groupId>rs.rado.leo</groupId>
+			<artifactId>service-api</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 </project>
