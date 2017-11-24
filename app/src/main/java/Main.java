@@ -1,4 +1,4 @@
-import config.WebConfig;
+import config.ConfigPackage;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
  * @since 23.11.17.
  */
 @SpringBootApplication
-@ComponentScan(basePackageClasses = { WebConfig.class })
+@ComponentScan(basePackageClasses = { ConfigPackage.class })
 public class Main {
 
     public static void main (String[] args) {
