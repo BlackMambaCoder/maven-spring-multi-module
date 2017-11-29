@@ -12,6 +12,9 @@
 		<module>serviceapi</module>
 		<module>serviceimpl</module>
 		<module>environments</module>
+		<module>database</module>
+		<module>repository</module>
+		<module>domain</module>
 	</modules>
 	<packaging>pom</packaging>
 
@@ -29,19 +32,27 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<spring.boot.version>1.5.5.RELEASE</spring.boot.version>
+		<mysql.connector.version>5.1.37</mysql.connector.version>
 	</properties>
 
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot</artifactId>
-			<version>${spring.boot.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-autoconfigure</artifactId>
-			<version>${spring.boot.version}</version>
-		</dependency>
-	</dependencies>
+	<dependencyManagement>
+		<dependencies>
+			<!--<dependency>-->
+				<!--<groupId>org.springframework.boot</groupId>-->
+				<!--<artifactId>spring-boot</artifactId>-->
+				<!--<version>${spring.boot.version}</version>-->
+			<!--</dependency>-->
+			<!--<dependency>-->
+				<!--<groupId>org.springframework.boot</groupId>-->
+				<!--<artifactId>spring-boot-autoconfigure</artifactId>-->
+				<!--<version>${spring.boot.version}</version>-->
+			<!--</dependency>-->
+			<dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+				<version>${mysql.connector.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 </project>

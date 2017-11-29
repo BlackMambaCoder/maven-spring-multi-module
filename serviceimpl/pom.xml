@@ -14,7 +14,22 @@
 		<dependency>
 			<groupId>rs.rado.leo</groupId>
 			<artifactId>service-api</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>4.3.10.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>rs.rado.leo</groupId>
+			<artifactId>repository</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>rs.rado.leo</groupId>
+			<artifactId>environments</artifactId>
+			<version>${project.version}</version>
 		</dependency>
 	</dependencies>
 

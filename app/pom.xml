@@ -15,12 +15,27 @@
 	<dependencies>
 		<dependency>
 			<groupId>rs.rado.leo</groupId>
-			<artifactId>web</artifactId>
+			<artifactId>database</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>rs.rado.leo</groupId>
+			<artifactId>environments</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>rs.rado.leo</groupId>
+			<artifactId>repository</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>rs.rado.leo</groupId>
 			<artifactId>service-impl</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>rs.rado.leo</groupId>
+			<artifactId>web</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 	</dependencies>
